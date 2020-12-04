@@ -1,0 +1,181 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "fullname": "test",
+			"email":"teste@app.com.br",
+            "username": "test",
+            "password": "test",
+            "role": "guest"
+        },
+        {
+            "id": 2,
+            "fullname": "uira peixoto",
+			"email":"uira.peixoto@app.com.br",
+            "username": "uira",
+            "password": "senha2020",
+            "role": "manager"
+        },
+        {
+            "id": 3,
+            "fullname": "admin",
+			"email":"admin@app.com.br",
+            "username": "admin",
+            "password": "admin123",
+            "role": "admin"
+        }
+    ],
+    "roles": [
+        {
+            "id": 1,
+            "name": "admin"
+        },
+        {
+            "id": 2,
+            "name": "manager"
+        },
+        {
+            "id": 3,
+            "name": "guest"
+        }
+    ],
+    "posts": [
+        {
+            "id": 1,
+            "title": "json-server",
+            "author": "typicode"
+        }
+    ],
+    "comments": [
+        {
+            "id": 1,
+            "body": "some comment",
+            "postId": 1
+        }
+    ],
+    "categorias": [
+        {
+            "id": 1,
+            "descricao": "Eletronicos"
+        },
+        {
+            "id": 2,
+            "descricao": "Games"
+        },
+        {
+            "descricao": "Camisa",
+            "id": 3
+        },
+        {
+            "descricao": "Calças",
+            "id": 4
+        },
+        {
+            "descricao": "Bolsas de Couro",
+            "id": 5
+        },
+        {
+            "descricao": "Almofadas",
+            "id": 6
+        },
+        {
+            "descricao": "Bonés",
+            "id": 7
+        },
+        {
+            "descricao": "Canecas",
+            "id": 8
+        },
+        {
+            "descricao": "Moletons",
+            "id": 9
+        },
+        {
+            "descricao": "Decoração",
+            "id": 10
+        },
+        {
+            "descricao": "Coletes",
+            "id": 11
+        }
+    ],
+    "produtos": [
+        {
+            "id": 1,
+            "descricao": "Iphone6S",
+            "preco": 1200.12,
+            "categoriaId": 1
+        },
+        {
+            "descricao": "Samsung Tab 10",
+            "preco": 1100.12,
+            "categoriaId": 1,
+            "id": 2
+        },
+        {
+            "descricao": "Nintendo Switch",
+            "preco": 2200.12,
+            "categoriaId": 1,
+            "id": 3
+        },
+        {
+            "descricao": "PlayStation 5",
+            "preco": 4500.12,
+            "categoriaId": 1,
+            "id": 4
+        }
+    ],
+    "cars": [
+        {
+            "id": 1,
+            "model": "BMW X7",
+            "color": "Preto",
+            "price": 455.95
+        },
+        {
+            "id": 2,
+            "model": "Mercedes benz c180",
+            "color": "Azul",
+            "price": 194.9
+        },
+        {
+            "id": 3,
+            "model": "Land Rover Range Rover Velar",
+            "color": "Branco",
+            "price": 377.38
+        },
+        {
+            "model": "KA",
+            "color": "Barnco",
+            "price": 32000,
+            "id": 8
+        },
+        {
+            "model": "Fiat Toro",
+            "color": "Branco",
+            "price": 99000,
+            "id": 9
+        },
+        {
+            "id": 10,
+            "model": "Santana Quantum",
+            "color": "prata",
+            "price": 12000
+        },
+        {
+            "model": "Camaro Amarelo",
+            "color": "prata",
+            "price": 8000,
+            "id": 11
+        },
+        {
+            "model": "Fiurino",
+            "color": "prata",
+            "price": 14000,
+            "id": 12
+        }
+    ],
+    "profile": {
+        "name": "typicode"
+    }
+}

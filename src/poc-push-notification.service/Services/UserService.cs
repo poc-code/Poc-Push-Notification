@@ -16,7 +16,7 @@ namespace poc_push_notification.service.Services
         // users hardcoded for simplicity, store in a db with hashed passwords in production applications
         private List<User> _users = new List<User>
         {
-            new User { Id = 1, FirstName = "Test", LastName = "User", Username = "test", Password = "test" }
+            new User { Id = 1, FullName = "Test", Username = "test", Password = "test", Email = "test@app.com.br", Role = AuthConstants.Role.Guest }
         };
 
         private readonly AppSettings _appSettings;
@@ -58,7 +58,11 @@ namespace poc_push_notification.service.Services
             var key = Encoding.ASCII.GetBytes(_appSettings.Secret);
             var tokenDescriptor = new SecurityTokenDescriptor
             {
-                Subject = new ClaimsIdentity(new[] { new Claim("id", user.Id.ToString()) }),
+                Subject = new ClaimsIdentity(new Claim[]
+                {
+                    new Claim(ClaimTypes.Name, user.Username),
+                    new Claim(ClaimTypes.Role, user.Role.ToString()),
+                }),
                 Expires = DateTime.UtcNow.AddDays(7),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
